@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SafeRoadMap</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.me/0058b78a-f66d-4830-bd87-2fad67041858%2Fmap-pointer-road-icon.png?v=1638093473396"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script
+      src="https://cdn.socket.io/4.5.4/socket.io.min.js"
+      integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="./map.js"></script> -->
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width: 100%;
+      background-color: antiquewhite;
+    }
+
+    .map-container {
+      width: 100%;
+      height: 100vh;
+    }
+
+    #myImg {
+      border-radius: 5px;
+      cursor: pointer;
+      /* ease | ease-in | ease-out | linear */
+      transition: transform ease-in-out 0.3s;
+      display: block;
+    }
+
+    #myImg:hover {
+      transform: scale(4);
+    }
+  </style>
+
+  <body>
+    <!-- the map container -->
+    <div id="map" class="map-container"></div>
+  </body>
+  <script type="text/javascript" src="./map.js"></script>
+</html>
